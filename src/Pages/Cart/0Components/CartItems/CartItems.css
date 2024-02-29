@@ -1,0 +1,135 @@
+.cartitems{
+    margin: 50px auto;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.cartitems-left-container{
+    width: 750px;
+    padding-top: 10px;
+}
+.cartitems-left-container hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitems-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.cartitems-cart-item-container{
+    width: 100%;
+    font-size: 16px;
+    color: #454545;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.carticon-product-icon{
+    max-height: 150px;
+}
+.cartitems-remove-icon{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(156, 156, 156);
+    background-color: transparent;
+    border: none;
+    margin: 20px 25px;
+}
+.cartitems-quantity{
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+}
+.res-wrapper-1, .res-wrapper-2, .res-wrapper-3{
+    display: flex;
+    align-items: center;
+}
+.res-wrapper-2, .res-wrapper-3{
+    padding: 20px 20px;
+    gap: 50px;
+}
+.res-wrapper-1{
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------------------------*/
+
+.cartitems-right-container{
+    width: 500px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgb(247, 247, 247);
+}
+.cartitems-checkout-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.cartitems-checkout-total{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.cartitems-checkout-btn{
+    width: 70%;
+    min-height: 58px;
+    outline: none;
+    border: none;
+    background-color: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 20px
+}
+.cartitems-promocode-container{
+    font-size: 16px;
+    font-weight: 500;
+}
+.cartitems-promocode-container p{
+    color: #555;
+}
+.cartitems-promobox-container{
+    width: 100%;
+    margin-top: 15px;
+    height: 48px;
+    background: #12114e;
+    border: solid rgb(184, 184, 184) 1px;
+    display: flex;
+    align-items: center;
+}
+.cartitems-promobox-container input{
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+}
+.cartitems-promobox-btn{
+    width: 25%;
+    height: 100%;
+    font-size: 16px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 775px){
+    .cartitems{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .cartitems-left-container{
+        flex-basis: 100%;
+    }
+    .cartitems-right-container{
+        flex-basis: 100%;
+    }
+}

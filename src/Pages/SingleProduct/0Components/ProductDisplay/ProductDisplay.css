@@ -1,0 +1,138 @@
+.product-display-container{
+    margin: 2% auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.single-prod-gallery-container{
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+.main-prod-img-container{
+    width: 100%;
+    height: 450px;
+    padding: 10px;
+}
+.main-prod-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.alt-images-container{
+    width: 100%;
+    height: 125px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.alt-img-container{
+    width: 110px;
+    height: 100%;
+    cursor: pointer;
+    border: solid 0.5px;
+    padding: 10px;
+}
+.alt-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*----------------------------------------------*/
+
+.single-prod-info-container {
+    width: 475px;
+    padding: 20px 20px;
+}
+.prod-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.prod-price{
+    margin-top: 2%;
+    font-size: 18px;
+}
+
+.color-select{
+    margin-top: 5%;
+}
+.color-select-btns{
+    margin-top: 2%;
+    display: flex;
+    gap: 10px;
+}
+.color-select-btn{
+    border: solid 1px black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.colorBtn-select{
+    outline: solid 2px black;
+    outline-offset: 2.5px;
+}
+.size-select{
+    margin-top: 4%;
+}.size-select-btns{
+    margin-top: 2%;
+    display: flex;
+    gap: 10px;
+}
+.size-select button{
+    width: 45px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sizeBtn-noSelect{
+    background-color: white;
+    color: black;
+}
+.sizeBtn-select{
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+.prod-desc{
+    margin-top: 5%;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.add-cart-btn{
+    margin-top: 5%;
+    background-color: rgb(43, 43, 43);
+    width: 80%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border: none;
+}
+.add-cart-btn:hover{
+    color: white;
+    background-color: rgb(75, 75, 75);
+}
+
+.error{
+    color: red;
+    font-size: 16px;
+}
+
+@media (max-width: 765px){
+    .product-display-container{
+        flex-wrap: wrap;
+    }
+    .single-prod-info-container{
+        flex-basis: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+}

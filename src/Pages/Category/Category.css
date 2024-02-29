@@ -1,0 +1,12 @@
+.category-container {
+    width: 100%;
+    display: flex;
+}
+.category-products {
+    width: 100%;
+    padding: 50px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 50px;
+}

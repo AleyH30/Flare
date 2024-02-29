@@ -1,0 +1,40 @@
+.featured-container{
+    width: 75%;
+    margin: 50px auto;
+}
+.featured-container h1{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 25px;
+}
+.featured-contents{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.featured-items-container{
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0px 30px;
+
+    display: flex;
+    gap: 30px;
+}
+.featured-items-container::-webkit-scrollbar{
+    display: none;
+}
+.feat-prev-btn, .feat-next-btn{ 
+    width: 40px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: rgb(66, 66, 66);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .featured-container{
+        width: 90%;
+    }
+}
