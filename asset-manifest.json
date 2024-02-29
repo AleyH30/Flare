@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/Flare/static/css/main.f5ae2168.css",
+    "main.js": "/Flare/static/js/main.d8d4af60.js",
+    "static/media/headerphoto2.jpg": "/Flare/static/media/headerphoto2.6c6fcaea8f5cbd907828.jpg",
+    "static/media/red-dyeshirt.jpg": "/Flare/static/media/red-dyeshirt.f08f5ff3570347d642f2.jpg",
+    "static/media/blue-dyeshirt.jpg": "/Flare/static/media/blue-dyeshirt.9466d3e2d3640aeee835.jpg",
+    "static/media/pink-hoodie-front.png": "/Flare/static/media/pink-hoodie-front.91b28c0957cf633673b7.png",
+    "static/media/green-dyeshirt.jpg": "/Flare/static/media/green-dyeshirt.a6095a350717816279f0.jpg",
+    "static/media/pink-hoodie-back.png": "/Flare/static/media/pink-hoodie-back.a5c9cabf5c07fe49b9c3.png",
+    "static/media/brown-dyeshirt.jpg": "/Flare/static/media/brown-dyeshirt.62a18aae2dc0ed9834f0.jpg",
+    "static/media/ash-hoodie-front.png": "/Flare/static/media/ash-hoodie-front.760e2635adcfa09f624d.png",
+    "static/media/ash-hoodie-back.png": "/Flare/static/media/ash-hoodie-back.ecea65b8c5ea4cdd622b.png",
+    "static/media/maroon-hoodie-front.png": "/Flare/static/media/maroon-hoodie-front.91575f00f67155ecf33b.png",
+    "static/media/green-hoodie-front.png": "/Flare/static/media/green-hoodie-front.3318607c3c5ed4f37f93.png",
+    "static/media/maroon-hoodie-back.png": "/Flare/static/media/maroon-hoodie-back.573735fb52219ec9a0ed.png",
+    "static/media/green-hoodie-back.png": "/Flare/static/media/green-hoodie-back.6594dc00de20363eace2.png",
+    "static/media/headerphoto3.jpg": "/Flare/static/media/headerphoto3.28fbc5a98fbf93ebfba6.jpg",
+    "static/media/brown-longshirt.jpg": "/Flare/static/media/brown-longshirt.2d8680254f28c917e516.jpg",
+    "static/media/green-longshirt.jpg": "/Flare/static/media/green-longshirt.18ddbbf9d3a6f8bc3894.jpg",
+    "static/media/white-shortshirt.jpg": "/Flare/static/media/white-shortshirt.05ee241affe8ac909f35.jpg",
+    "static/media/grey-shortshirt.jpg": "/Flare/static/media/grey-shortshirt.37af33819c07c8e3ad5c.jpg",
+    "static/media/blue-shortshirt.jpg": "/Flare/static/media/blue-shortshirt.e3e83f4537af8e03a4aa.jpg",
+    "static/media/headerphoto1.jpg": "/Flare/static/media/headerphoto1.dbcb7a7de45bc7dce24f.jpg",
+    "static/media/red-twohoodie-front.jpg": "/Flare/static/media/red-twohoodie-front.1ffe3697aa6f6d0e8f20.jpg",
+    "static/media/red-twohoodie-back.jpg": "/Flare/static/media/red-twohoodie-back.731821af9236a356ca24.jpg",
+    "static/media/blue-stripehoodie-front.jpg": "/Flare/static/media/blue-stripehoodie-front.9a5d21119379fb377f42.jpg",
+    "static/media/blue-stripehoodie-back.jpg": "/Flare/static/media/blue-stripehoodie-back.30931580e2e87cc87fad.jpg",
+    "static/media/mustard-twohoodie-front.jpg": "/Flare/static/media/mustard-twohoodie-front.37783913463b27b6539a.jpg",
+    "static/media/black-twohoodie-front.jpg": "/Flare/static/media/black-twohoodie-front.f56b4bdd58beb3b5fb55.jpg",
+    "static/media/mustard-twohoodie-back.jpg": "/Flare/static/media/mustard-twohoodie-back.899c61ca93381a0ed401.jpg",
+    "static/media/black-twohoodie-back.jpg": "/Flare/static/media/black-twohoodie-back.eae2de26d167e215a723.jpg",
+    "static/media/black-stripehoodie-front.jpg": "/Flare/static/media/black-stripehoodie-front.68df86112894502ae8f2.jpg",
+    "static/media/black-stripehoodie-back.jpg": "/Flare/static/media/black-stripehoodie-back.d2fe3170a240e02276a2.jpg",
+    "index.html": "/Flare/index.html",
+    "main.f5ae2168.css.map": "/Flare/static/css/main.f5ae2168.css.map",
+    "main.d8d4af60.js.map": "/Flare/static/js/main.d8d4af60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5ae2168.css",
+    "static/js/main.d8d4af60.js"
+  ]
+}
