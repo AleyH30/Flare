@@ -25,7 +25,7 @@ const App = () => {
                     </Route>
                     <Route path='/login' element={<LoginSignup/>}/>
                     <Route path='/cart' element={<Cart/>}/>
-                    <Route path='*' element={<NotFound />} />
+                    {/*<Route path='*' element={<NotFound />} />*/}
                 </Routes>
             </HashRouter>
     )
