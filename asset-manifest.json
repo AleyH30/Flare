@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flare/static/css/main.f5ae2168.css",
-    "main.js": "/flare/static/js/main.63adbb0f.js",
+    "main.js": "/flare/static/js/main.3069cbc5.js",
     "static/media/headerphoto2.jpg": "/flare/static/media/headerphoto2.6c6fcaea8f5cbd907828.jpg",
     "static/media/red-dyeshirt.jpg": "/flare/static/media/red-dyeshirt.f08f5ff3570347d642f2.jpg",
     "static/media/blue-dyeshirt.jpg": "/flare/static/media/blue-dyeshirt.9466d3e2d3640aeee835.jpg",
@@ -34,10 +34,10 @@
     "static/media/black-stripehoodie-back.jpg": "/flare/static/media/black-stripehoodie-back.d2fe3170a240e02276a2.jpg",
     "index.html": "/flare/index.html",
     "main.f5ae2168.css.map": "/flare/static/css/main.f5ae2168.css.map",
-    "main.63adbb0f.js.map": "/flare/static/js/main.63adbb0f.js.map"
+    "main.3069cbc5.js.map": "/flare/static/js/main.3069cbc5.js.map"
   },
   "entrypoints": [
     "static/css/main.f5ae2168.css",
-    "static/js/main.63adbb0f.js"
+    "static/js/main.3069cbc5.js"
   ]
 }
