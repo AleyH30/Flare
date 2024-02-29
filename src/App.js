@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css'
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from "./Pages/0Components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import Category from "./Pages/Category/Category";
@@ -12,7 +12,7 @@ import NotFound from "./NotFound/NotFound";
 const App = () => {
     return (
         <div>
-            <BrowserRouter>
+            <HashRouter>
                 <Navbar/>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
@@ -28,7 +28,7 @@ const App = () => {
                     <Route path='/cart' element={<Cart/>}/>
                     <Route path='*' element={<NotFound />} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
