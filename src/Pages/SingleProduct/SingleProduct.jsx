@@ -13,7 +13,7 @@ const SingleProduct = () => {
     return (
         <div className="product-page">
             <ProductDisplay product={product} itemId={ItemId} itemSize={ItemSize} />
-            <Featured header={"Suggested"}/>
+            <Featured header={"Suggested..."}/>
         </div>
     )
 }

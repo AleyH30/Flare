@@ -6,6 +6,7 @@
     margin: 30px auto;
     text-align: center;
     font-size: 25px;
+    color: rgb(139, 139, 139);
 }
 .featured-contents{
     display: flex;

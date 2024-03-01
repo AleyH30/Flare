@@ -43,45 +43,46 @@ const ProductDisplay = (props) => {
 
     return (
         <div className="product-display-container">
-            <div className="single-prod-gallery-container">
-                <div className="main-prod-img-container">
-                    <img src={mainImage} className="main-prod-img" alt="" />
-                </div>
-                <div className="alt-images-container">
-                    {item.img.map((image, imageIdx) => {
-                        return <AltImage key={imageIdx} image={image} changeMainImage={() => changeMainImage(image)} />
-                    })}
-                </div>
-            </div>
-            <div className="single-prod-info-container">
-                <p className="prod-name">{product.name}</p>
-                <p className="prod-price">${product.price}.00</p>
-                <div className="color-select">
-                    <p><b>Color:</b> {String(colorBtnSelected).toUpperCase()}</p>
-                    <div className="color-select-btns">
-                        {product.items.map((item, iIdx) => {
-                            return <ColorButton key={iIdx} id={product.id} iId={item.id} color={item.color} colorBtnSelected={colorBtnSelected} func={() => setColorBtnSelected(item.color)} changeMainImage={() => changeMainImage(item.img[0])} />
+            <div className="product-display-contents">
+                <div className="single-prod-gallery-container">
+                    <div className="main-prod-img-container">
+                        <img src={mainImage} className="main-prod-img" alt="" />
+                    </div>
+                    <div className="alt-images-container">
+                        {item.img.map((image, imageIdx) => {
+                            return <AltImage key={imageIdx} image={image} changeMainImage={() => changeMainImage(image)} />
                         })}
                     </div>
+                </div>
+                <div className="single-prod-info-container">
+                    <p className="prod-name">{product.name}</p>
+                    <p className="prod-price">${product.price}.00</p>
+                    <div className="color-select">
+                        <p><b>Color:</b> {String(colorBtnSelected).toUpperCase()}</p>
+                        <div className="color-select-btns">
+                            {product.items.map((item, iIdx) => {
+                                return <ColorButton key={iIdx} id={product.id} iId={item.id} color={item.color} colorBtnSelected={colorBtnSelected} func={() => setColorBtnSelected(item.color)} changeMainImage={() => changeMainImage(item.img[0])} />
+                            })}
+                        </div>
 
-                </div>
-                <div className="size-select">
-                    <p><b>Size:</b></p>
-                    <div className="size-select-btns">
-                        <button className={size === 'S' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('S')}>S</button>
-                        <button className={size === 'M' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('M')}>M</button>
-                        <button className={size === 'L' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('L')}>L</button>
-                        <button className={size === 'XL' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('XL')}>XL</button>
                     </div>
+                    <div className="size-select">
+                        <p><b>Size:</b></p>
+                        <div className="size-select-btns">
+                            <button className={size === 'S' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('S')}>S</button>
+                            <button className={size === 'M' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('M')}>M</button>
+                            <button className={size === 'L' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('L')}>L</button>
+                            <button className={size === 'XL' ? 'sizeBtn-select' : 'sizeBtn-noSelect'} onClick={() => SelectSize('XL')}>XL</button>
+                        </div>
+                    </div>
+                    <p className="error">{sizeError ? "Please select size" : null}</p>
+                    <button className="add-cart-btn" onClick={() => (ClickAddToCart())}>Add To Cart</button>
+                    <p className="prod-desc">
+                        Oh look, another stylish piece. Step out in style with this fashionable item. A comfortable fit while looking good is all anyone can really ask for.
+                        This item does it best. No matter the season, this piece will always be trendy. This item also comes in multiple colors so that you can pick the one
+                        just right for you.
+                    </p>
                 </div>
-                <p className="error">{sizeError ? "Please select size" : null}</p>
-                <button className="add-cart-btn" onClick={() => (ClickAddToCart())}>Add To Cart</button>
-                <p className="prod-desc">
-                    Oh look, another stylish piece. Step out in style with this fashionable item. A comfortable fit while looking good is all anyone can really ask for.
-                    This item does it best.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    a eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-                </p>
             </div>
         </div>
     )
