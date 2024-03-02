@@ -2,6 +2,7 @@
     width: 100%;
     background-color: black;
     height: 80vh;
+    max-height: 800px;
     border-bottom: 5px solid black;
     position: relative;
 }
@@ -57,6 +58,11 @@
     object-fit: cover;
 }
 
+@media(max-width: 800px){
+    .intro-container{
+        height: 60vh;
+    }
+}
 @media (max-width: 600px){
     .intro-container{
         height: 60vh;
