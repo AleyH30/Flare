@@ -28,7 +28,8 @@
     height: 25px;
     font-size: 14px;
     background-color: rgb(240, 240, 240);
-    border: solid 0.5px;
+    border: solid 0.5px black;
+    color: black;
 }
 .refiner-bg-closeout-btn{
     display: none;

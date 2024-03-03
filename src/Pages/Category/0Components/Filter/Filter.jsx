@@ -9,7 +9,7 @@ const sizeSelectedArr = [];
 const colorSelectedArr = [];
 const priceSelectedArr = [];
 const checkboxHolders = [];
-var testing123;
+var checkbox;
 
 const Filter = (props) => {
     const [sidebarFilterActive, setSidebarFilterActive] = useState(false);
@@ -17,9 +17,9 @@ const Filter = (props) => {
     var matches = false;
 
     const AddRemoveClass = (category, name) => (event) => {
-        testing123 = event.target
+        checkbox = event.target
         if (event.target.checked === true) {
-            checkboxHolders.push(testing123)
+            checkboxHolders.push(checkbox)
             console.log(checkboxHolders)
             if (category === "size") {
                 sizeSelectedArr.push(name); //add name of category class to array
@@ -35,7 +35,7 @@ const Filter = (props) => {
             }
         }
         else if (event.target.checked === false) {
-            const checkboxIdx = checkboxHolders.indexOf(testing123);
+            const checkboxIdx = checkboxHolders.indexOf(checkbox);
             checkboxHolders.splice(checkboxIdx, 1);
             console.log(checkboxHolders)
             if (category === "size") {
@@ -155,12 +155,12 @@ const Filter = (props) => {
         document.body.style.overflow = sidebarFilterActive ? "hidden" : "unset";
       }, [sidebarFilterActive]);
     
-      const Width = () => {
+    const Width = () => {
         var width = window.innerWidth;
         if (width > 850){
             setSidebarFilterActive(false);
         }
-      }
+    }
     window.addEventListener('resize', Width)
     
 

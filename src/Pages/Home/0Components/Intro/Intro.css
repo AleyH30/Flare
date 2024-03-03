@@ -35,6 +35,8 @@
     cursor: pointer;
     background-color: white;
     z-index: 1;
+    color: black;
+    border: 2px solid black;
 }
 .intro-shopnow-btn:hover{
     background-color: rgb(223, 223, 223);

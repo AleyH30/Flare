@@ -30,6 +30,7 @@ const Category = (props) => {
           <Filter set={ForceRender} products={products} cfa={ColorFilterArr} />
         </div>
         <div className="category-products">
+          
           {products.map((product, i) => {
             if (props.category === product.category || props.category === "") {
               return product.items.map((item, iIdx) => {
@@ -46,6 +47,7 @@ const Category = (props) => {
             }
             else { return null; }
           })}
+          <p className="category-nrf-msg" >No products found. Please broaden your search</p>
         </div>
       </div>
     </div>
