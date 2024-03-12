@@ -1,7 +1,7 @@
 .intro-container{
     width: 100%;
     background-color: black;
-    height: 80vh;
+    height: 70vh;
     max-height: 800px;
     border-bottom: 5px solid black;
     position: relative;
@@ -29,8 +29,8 @@
     position: absolute;
     inset: 0;
     margin: auto;
-    width: 250px;
-    height: 75px;
+    width: 240px;
+    height: 70px;
     font-size: 18px;
     cursor: pointer;
     background-color: white;

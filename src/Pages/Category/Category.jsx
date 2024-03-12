@@ -5,12 +5,11 @@ import Item from "./0Components/Items/Item";
 import { StoreContext } from "../../Context/StoreContext";
 import { useLocation } from "react-router-dom";
 
-
 const Category = (props) => {
   const [reactRender, setReactRender] = useState(true);
+  const [visTrueNum, setVisTrueNum] = useState(null);
   const { products } = useContext(StoreContext);
   
-
   const ColorFilterArr = []
 
   const ForceRender = () => {
@@ -27,12 +26,11 @@ const Category = (props) => {
     <div className="category-page">
       <div className="category-container">
         <div className="category-filter">
-          <Filter set={ForceRender} products={products} cfa={ColorFilterArr} />
+          <Filter set={ForceRender} products={products} cfa={ColorFilterArr} type={props.category} filterNum={setVisTrueNum}/>
         </div>
         <div className="category-products">
-          
           {products.map((product, i) => {
-            if (props.category === product.category || props.category === "") {
+            if (props.category === product.category || props.category === "all") {
               return product.items.map((item, iIdx) => {
                 item.color.forEach((color) => {
                   if (!ColorFilterArr.includes(color)) {
@@ -47,7 +45,7 @@ const Category = (props) => {
             }
             else { return null; }
           })}
-          <p className="category-nrf-msg" >No products found. Please broaden your search</p>
+          {visTrueNum === 0? <p className="category-nrf-msg">No products found. Please widen your search.</p> : null}
         </div>
       </div>
     </div>

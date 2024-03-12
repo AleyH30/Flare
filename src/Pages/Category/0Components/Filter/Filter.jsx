@@ -54,77 +54,82 @@ const Filter = (props) => {
                 console.log(priceSelectedArr)
             }
         }
+        props.products.forEach((product) => {
+            product.items.forEach((item) => {
+                item.visibility = true;
+            })
+        });
         if (sizeSelectedArr.length === 0 && colorSelectedArr.length === 0 && priceSelectedArr.length === 0) {
-            props.products.forEach((product) => {
-                product.items.forEach((item) => {
-                    item.visibility = true;
-                })
-            });
             props.set();
         }
         else {
-            props.products.forEach((product) => {
-                product.items.forEach((item) => {
-                    item.visibility = true;
-                })
-            });
             filterProducts();
         }
     }
 
     function filterProducts() {
+        var visTrueNum = 0;
         props.products.forEach((product) => { // filter out what doesn't match
             product.items.forEach((item) => {
                 if (item.visibility === true) {
-                    if (sizeSelectedArr.length > 0) {
-                        sizeSelectedArr.forEach((sizeAmt) => {
-                            if (item.sizes.includes(sizeAmt) || item.sizes.includes("all")) {
-                                matches = true;
-                            }
-                        });
-                        if (matches !== true) {
-                            item.visibility = false;
-                        }
-                        matches = false;
+                    if (props.type !== product.category && props.type !== "all") {
+                        item.visibility = false;
                     }
-                    if (colorSelectedArr.length > 0) {
-                        colorSelectedArr.forEach((colorAmt) => {
-                            if (item.color.includes(colorAmt)) {
-                                matches = true;
+                    else {
+                        if (sizeSelectedArr.length > 0) {
+                            sizeSelectedArr.forEach((sizeAmt) => {
+                                if (item.sizes.includes(sizeAmt) || item.sizes.includes("all")) {
+                                    matches = true;
+                                }
+                            });
+                            if (matches !== true) {
+                                item.visibility = false;
                             }
-                        });
-                        if (matches !== true) {
-                            item.visibility = false;
+                            matches = false;
                         }
-                        matches = false;
+                        if (colorSelectedArr.length > 0) {
+                            colorSelectedArr.forEach((colorAmt) => {
+                                if (item.color.includes(colorAmt)) {
+                                    matches = true;
+                                }
+                            });
+                            if (matches !== true) {
+                                item.visibility = false;
+                            }
+                            matches = false;
+                        }
+                        if (priceSelectedArr.length > 0) {
+                            priceSelectedArr.forEach((priceAmt) => {
+                                if (priceAmt === 1) {
+                                    if (product.price < 50) {
+                                        matches = true;
+                                    }
+                                }
+                                else if (priceAmt === 2) {
+                                    if (product.price > 50 && product.price < 100) {
+                                        matches = true;
+                                    }
+                                }
+                                else if (priceAmt === 3) {
+                                    if (product.price >= 100) {
+                                        matches = true;
+                                    }
+                                }
+                            });
+                            if (matches !== true) {
+                                item.visibility = false
+                            }
+                            matches = false;
+                        }
                     }
-                    if (priceSelectedArr.length > 0) {
-                        priceSelectedArr.forEach((priceAmt) => {
-                            if (priceAmt === 1) {
-                                if (product.price < 50) {
-                                    matches = true;
-                                }
-                            }
-                            else if (priceAmt === 2){
-                                if (product.price > 50 && product.price < 100) {
-                                    matches = true;
-                                }
-                            }
-                            else if (priceAmt === 3){
-                                if (product.price >= 100) {
-                                    matches = true;
-                                }
-                            }
-                        });
-                        if (matches !== true) {
-                            item.visibility = false
-                        }
-                        matches = false;
+                    if (item.visibility === true){
+                        visTrueNum++;
                     }
                 }
             })
         });
         props.set();
+        props.filterNum(Number(visTrueNum))
     }
 
     const ClickReset = () => {
