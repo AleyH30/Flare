@@ -1,9 +1,9 @@
 import React ,{useContext, useEffect, useState} from "react";
 import './Featured.css';
 import { StoreContext } from "../../../Context/StoreContext";
-import Item from "../../Category/0Components/Items/Item";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import FeaturedCard from "./0Components/FeaturedCard";
 
 var scrollContainer;
 var containerDimensions;
@@ -47,7 +47,7 @@ const Featured = (props) => {
                     return product.items.map((item, i) => {
                         if (item.tags.includes("featured")) {
                             return (
-                                <Item key={item.id} id={product.id} itemId={item.id} name={product.name} price={product.price} image={item.img[0]} />
+                                <FeaturedCard key={item.id} id={product.id} itemId={item.id} name={product.name} price={product.price} image={item.img[0]} />
                                 )
                         }
                         else {

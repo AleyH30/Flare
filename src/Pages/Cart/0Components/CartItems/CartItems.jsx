@@ -13,12 +13,12 @@ const CartItems = (props) => {
                 </div>
                 <hr />
                 <div className="cartitems-cart-items-container">
-                    {cartItems.map((cartItem) => {
+                    {cartItems.map((cartItem, ciIdx) => {
                         let product = products.find((producte) => producte.id === cartItem.productId);
                         let item = product.items.find((iteme) => iteme.id === cartItem.itemId)
 
-                        return ( 
-                        <>
+                        return  ( 
+                        <div key={ciIdx}>
                                 <div className="cartitems-cart-item-container">
                                     <div className="res-wrapper-1">
                                         <div className="res-wrapper-2">
@@ -51,7 +51,7 @@ const CartItems = (props) => {
                                     <button className='cartitems-remove-icon' onClick={() => { adjustCartQuantity(product.id, item.id, cartItem.size, 0) }} alt="">Remove</button>
                                 </div>
                             <hr />
-                        </>)
+                        </div>)
                     })}
                 </div>
             </div>

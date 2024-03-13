@@ -37,8 +37,8 @@ const Navbar = () => {
                     <div className="right-links">
                         <ul>
                             {localStorage.getItem('auth-token')?
-                            <li><button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}>Logout</button></li>:
-                            <li><Link to='/login' className="login-btn">Login</Link></li>}
+                            <li className="logout-btn"  /*onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}*/>Log Out</li>:
+                            <li><Link to='/login' className="login-btn">Log In</Link></li>}
                             <li>
                                 <div className="cart-link-package">
                                     <Link to='/cart' className="cart-btn"><FontAwesomeIcon icon={faClipboard} /></Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     <li onClick={() => setSidebarActive(false)}><Link to='/new'>New</Link></li>
                     <li onClick={() => setSidebarActive(false)}><Link to='/hoodies'>Hoodies</Link></li>
                     <li onClick={() => setSidebarActive(false)}><Link to='/tees'>Tees</Link></li>
-                    <li onClick={() => setSidebarActive(false)}><Link to='/login'>Login</Link></li>
+                    <li onClick={() => setSidebarActive(false)}><Link to='/login'>Log In</Link></li>
                     <li onClick={() => setSidebarActive(false)}>
                         <Link to='/cart' >
                             <div className="cart-link-package">

@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
 }
 .refiner-header{
     font-size: 16px;
@@ -27,7 +27,7 @@
     width: 75px;
     height: 25px;
     font-size: 14px;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(210, 210, 210);
     border: solid 0.5px black;
     color: black;
 }
@@ -44,11 +44,11 @@
     height: 93vh;
     position: fixed;
     top: 7vh;
-    border-right: solid 5px;
+    border-right: solid 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(235, 235, 235);
 }
 .filter-toggle-btn{
     display: none;

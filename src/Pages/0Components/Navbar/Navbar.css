@@ -41,10 +41,11 @@
     border-bottom: solid;
     border-color: black;
 }
-.login-btn{
+.login-btn, .logout-btn{
     text-decoration: none;
     color: black;
     font-size: 22px;
+    cursor: pointer;
 }
 .cart-link-package{
     display: flex;
@@ -56,10 +57,10 @@
     color: black;
 }
 .nav-cart-count{
-    width: fit-content;
-    height: fit-content;
+    min-width: 25px;
+    height: 25px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 14px;
     background: red;
     color: white;

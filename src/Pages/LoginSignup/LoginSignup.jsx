@@ -62,7 +62,7 @@ const LoginSignup = () => {
                     <input name='email' value={formData.email} onChange={changeHandler} type="email" placeholder="Email Address"/>
                     <input name='password' value={formData.password} onChange={changeHandler} type="password" placeholder="Password"/>
                 </div>
-                <button onClick={()=>{state==="Login"?login():signup()}}>Continue</button>
+                <button /*onClick={()=>{state==="Login"?login():signup()}}*/>Continue</button>
                 {state==="Sign Up"?
                 <>
                 <div className="loginsignup-agree">

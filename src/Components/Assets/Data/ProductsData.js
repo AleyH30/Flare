@@ -99,7 +99,7 @@ let products = [
     },{
         id: 3,
         name: "Long Sleeve Shirt",
-        price: 25,
+        price: 80,
         category: "tee",
         items: [{
                 id: "3brown",
@@ -121,7 +121,7 @@ let products = [
     },{
         id: 4,
         name: "Simple Hoodie",
-        price: 25,
+        price: 45,
         category: "hoodie",
         items: [{
                 id: "4green",
@@ -159,7 +159,7 @@ let products = [
     },{
         id: 5,
         name: "Stripe Hoodie",
-        price: 25,
+        price: 110,
         category: "hoodie",
         items: [{
                 id: "5black",
@@ -181,7 +181,7 @@ let products = [
     }, {
         id: 6,
         name: "Two-Stripe Hoodie",
-        price: 25,
+        price: 75,
         category: "hoodie",
         items: [{
             id: "6black",

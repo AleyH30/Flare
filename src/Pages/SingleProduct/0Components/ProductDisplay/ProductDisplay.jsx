@@ -9,7 +9,6 @@ const ProductDisplay = (props) => {
     const {product} = props;
     const {itemId} = props;
     const {addToCart} = useContext(StoreContext)
-    console.log(itemId);
 
     const item = product.items.find((iteme) => iteme.id === itemId)
     const [mainImage, setMainImage] = useState(item.img[0])
