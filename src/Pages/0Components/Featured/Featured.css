@@ -16,6 +16,7 @@
 .featured-items-container{
     overflow-x: scroll;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
     padding: 0px 30px;
 
     display: flex;
