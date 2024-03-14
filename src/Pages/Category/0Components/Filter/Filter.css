@@ -23,13 +23,25 @@
     border-bottom: solid;
     font-size: 16px;
 }
-.refiner-reset-btn{
-    width: 75px;
-    height: 25px;
+.refiner-apply-btn{
+    margin-top: 20px;
+    display: block;
+    width: 140px;
+    height: 30px;
     font-size: 14px;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(80, 80, 80);
     border: solid 0.5px black;
-    color: black;
+    color: white;
+}
+.refiner-reset-btn{
+    margin-top: 10px;
+    display: block;
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgb(80, 80, 80);
+    border: solid 0.5px black;
+    color: white;
 }
 .refiner-bg-closeout-btn{
     display: none;
