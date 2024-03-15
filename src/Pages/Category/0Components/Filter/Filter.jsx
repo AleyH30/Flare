@@ -222,7 +222,7 @@ const Filter = (props) => {
                         </div>
                     </div>
                 </div>
-                <button className="refiner-apply-btn" onClick={() => setSidebarFilterActive(false)}>See Changes</button>
+                {sidebarFilterActive? <button className="refiner-apply-btn" onClick={() => setSidebarFilterActive(false)}>See Changes</button> : null}
                 <button className="refiner-reset-btn" onClick={ClickReset}>Reset</button>
             </div>
         </div>
