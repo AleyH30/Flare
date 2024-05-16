@@ -1,5 +1,5 @@
 .navigation {
-    height: 7vh;
+    height: 7dvh;
     width: 100%;
     position: sticky;
     top: 0;
@@ -21,7 +21,7 @@
     align-items: center;
 }
 .logo-btn{
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
 }
@@ -33,7 +33,7 @@
     list-style: none;
 }
 .nav-links ul li a{
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
 }
@@ -44,7 +44,7 @@
 .login-btn, .logout-btn{
     text-decoration: none;
     color: black;
-    font-size: 22px;
+    font-size: 18px;
     cursor: pointer;
 }
 .cart-link-package{
@@ -87,7 +87,7 @@
     display: none;
     width: 50px;
     height: 50px;
-    font-size: 25px;
+    font-size: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -99,41 +99,46 @@
     top: 10px;
     right: 15px;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
 }
 .sidebar-bg-closeout-btn{
     position: fixed;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-color: rgba(99, 99, 99, 0.808);
     z-index: 101;
 }
 .sidebar-nav{
     display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100dvh;
     width: 280px;
+    box-shadow: 0px 5px 10px 5px rgba(81, 81, 81, 0.719);
     background-color: white;
+    overflow-y: auto;
     z-index: 102;
 }
 .sidebar-nav-links{
+    width: 100%;
     margin-top: 50px;
 }
 .sidebar-nav-links li{
     list-style: none;
     cursor: pointer;
     width: 90%;
-    height: 100px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    border-bottom: solid 0.5px rgb(114, 114, 114);
+    border-bottom: solid 0.5px rgb(214, 214, 214);
 }
 .sidebar-nav-links li a{
     display: flex;
@@ -143,7 +148,7 @@
     height: 100%;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (max-width: 800px){

@@ -1,8 +1,8 @@
 .refiner{
     min-width: 240px;
-    height: 93vh;
+    height: 93dvh;
     position: sticky;
-    top: 7vh;
+    top: 7dvh;
     border-right: solid 5px;
     display: flex;
     justify-content: center;

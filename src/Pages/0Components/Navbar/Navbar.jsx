@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from "react-router-dom";
 import { StoreContext } from "../../../Context/StoreContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faClipboard } from '@fortawesome/free-regular-svg-icons'
 
 const Navbar = () => {
@@ -52,8 +52,8 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="sidebar-bg-closeout-btn" style={{ display: sidebarActive ? "block" : "none" }} onClick={() => setSidebarActive(false)}></div>
-            <div className="sidebar-nav" style={{ display: sidebarActive ? "block" : "none" }}>
-                <button className="sidebar-x-closeout-btn" onClick={() => setSidebarActive(!sidebarActive)}>X</button>
+            <div className="sidebar-nav" style={{ display: sidebarActive ? "flex" : "none" }}>
+                <button className="sidebar-x-closeout-btn" onClick={() => setSidebarActive(!sidebarActive)}><FontAwesomeIcon icon={faXmark} /></button>
                 <ul className="sidebar-nav-links">
                     <li onClick={() => setSidebarActive(false)}><Link to='/'>Home</Link></li>
                     <li onClick={() => setSidebarActive(false)}><Link to='/new'>New</Link></li>
