@@ -1,5 +1,5 @@
 .navigation {
-    height: 7dvh;
+    height: 50px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -71,6 +71,7 @@
 }
 .right-links ul{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 .right-links ul li{

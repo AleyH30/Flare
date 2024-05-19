@@ -1,8 +1,8 @@
 .refiner{
     min-width: 240px;
-    height: 93dvh;
+    height: calc(100vh - 50px);
     position: sticky;
-    top: 7dvh;
+    top: 50px;
     border-right: solid 5px;
     display: flex;
     justify-content: center;
@@ -14,8 +14,10 @@
     text-decoration: underline;
 }
 .refiner-container{
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
 }
 .filter-type{
     margin-top: 2%;
@@ -53,9 +55,9 @@
 }
 .sidebar-refiner{
     min-width: 240px;
-    height: 93vh;
+    height: calc(100vh - 50px);
     position: fixed;
-    top: 7vh;
+    top: 50px;
     border-right: solid 5px black;
     display: flex;
     justify-content: center;
@@ -69,8 +71,8 @@
     height: 50px;
     border-radius: 50px;
     font-size: 20px;
-    left: 5%;
-    top: 10%;
+    left: 20px;
+    top: 60px;
     cursor: pointer;
 }
 

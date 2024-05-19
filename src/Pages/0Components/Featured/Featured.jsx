@@ -15,7 +15,6 @@ const Featured = (props) => {
     const GetContainerWidth = () => {
         containerDimensions = scrollContainer.getBoundingClientRect();
         containerWidth = containerDimensions.width;
-        console.log(containerWidth)
     }
 
     useEffect(() => {
