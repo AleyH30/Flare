@@ -37,6 +37,7 @@ const ProductDisplay = (props) => {
     
     useEffect(() => {
         changeMainImage(item.img[0])
+        setColorBtnSelected(item.color)
         window.scrollTo(0, 0);
       }, [location]);
 

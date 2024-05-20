@@ -20,38 +20,30 @@ const Filter = (props) => {
         checkbox = event.target
         if (event.target.checked === true) {
             checkboxHolders.push(checkbox)
-            //console.log(checkboxHolders)
             if (category === "size") {
                 sizeSelectedArr.push(name); //add name of category class to array
-                //console.log(sizeSelectedArr)
             }
             else if (category === "color") {
                 colorSelectedArr.push(name);
-                //console.log(colorSelectedArr)
             }
             else if (category === "price") {
                 priceSelectedArr.push(name);
-                //console.log(priceSelectedArr)
             }
         }
         else if (event.target.checked === false) {
             const checkboxIdx = checkboxHolders.indexOf(checkbox);
             checkboxHolders.splice(checkboxIdx, 1);
-            //console.log(checkboxHolders)
             if (category === "size") {
                 const index = sizeSelectedArr.indexOf(name); //remove name of category class from array
                 sizeSelectedArr.splice(index, 1);
-                //console.log(sizeSelectedArr)
             }
             else if (category === "color") {
                 const index = colorSelectedArr.indexOf(name);
                 colorSelectedArr.splice(index, 1);
-                //console.log(colorSelectedArr)
             }
             else if (category === "price") {
                 const index = priceSelectedArr.indexOf(name);
                 priceSelectedArr.splice(index, 1);
-                //console.log(priceSelectedArr)
             }
         }
         props.products.forEach((product) => {
