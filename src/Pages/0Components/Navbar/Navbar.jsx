@@ -36,9 +36,7 @@ const Navbar = () => {
                     </div>
                     <div className="right-links">
                         <ul>
-                            {localStorage.getItem('auth-token')?
-                            <li className="logout-btn"  /*onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}*/>Log Out</li>:
-                            <li><Link to='/login' className="login-btn">Log In</Link></li>}
+                            <li><Link to='/login' className="login-btn">Log In</Link></li>
                             <li>
                                 <div className="cart-link-package">
                                     <Link to='/cart' className="cart-btn"><FontAwesomeIcon icon={faClipboard} /></Link>

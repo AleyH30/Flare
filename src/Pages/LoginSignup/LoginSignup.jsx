@@ -4,53 +4,13 @@ import './LoginSignup.css';
 const LoginSignup = () => {
     const [state, setState] = useState('Login');
     const [formData, setFormData] = useState({
-        username:"",
+        fullname:"",
         password:"",
         email:""
     })
 
     const changeHandler = (e) => {
         setFormData({...formData,[e.target.name]:e.target.value})
-    }
-
-    const login = async()=>{
-        console.log("Login Function Executed",formData)
-        let responseData;
-        await fetch('http://localhost:4000/login',{
-            method: 'POST',
-            headers:{
-                Accept:'application/form-data',
-                'Content-Type':'application/json',
-            },
-            body: JSON.stringify(formData),
-        }).then((response)=>response.json()).then((data)=>responseData=data)
-        if(responseData.success){
-            localStorage.setItem('auth-token',responseData.token);
-            window.location.replace("/");
-        }
-        else{
-            alert(responseData.errors)
-        }
-    }
-
-    const signup = async ()=>{
-        console.log("Signup Function Executed",formData)
-        let responseData;
-        await fetch('http://localhost:4000/signup',{
-            method: 'POST',
-            headers:{
-                Accept:'application/form-data',
-                'Content-Type':'application/json',
-            },
-            body: JSON.stringify(formData),
-        }).then((response)=>response.json()).then((data)=>responseData=data)
-        if(responseData.success){
-            localStorage.setItem('auth-token',responseData.token);
-            window.location.replace("/");
-        }
-        else{
-            alert(responseData.errors)
-        }
     }
 
     return (
@@ -61,7 +21,7 @@ const LoginSignup = () => {
                     {state==="Sign Up"?
                     <div className='form-group'>
                         <label htmlFor='fullname'>Full Name:</label>
-                        <input id='fullname' name='fullname' value={formData.username} onChange={changeHandler} type="text" placeholder="Your Name" />
+                        <input id='fullname' name='fullname' value={formData.fullname} onChange={changeHandler} type="text" placeholder="Your Name" />
                     </div>
                     :<></>}
                     <div className='form-group'>
@@ -73,7 +33,7 @@ const LoginSignup = () => {
                         <input id='password' name='password' value={formData.password} onChange={changeHandler} type="password" placeholder="Password" />
                     </div>
                 </div>
-                <button /*onClick={()=>{state==="Login"?login():signup()}}*/>Continue</button>
+                <button>Continue</button>
                 {state==="Sign Up"?
                 <>
                 <div className="loginsignup-agree">
