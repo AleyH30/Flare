@@ -11,6 +11,7 @@ import NotFound from "./NotFound/NotFound";
 
 const App = () => {
     return (
+        <div className="app">
             <HashRouter>
                 <Navbar/>
                 <Routes>
@@ -28,6 +29,7 @@ const App = () => {
                     {/*<Route path='*' element={<NotFound />} />*/}
                 </Routes>
             </HashRouter>
+            </div>
     )
 }
 

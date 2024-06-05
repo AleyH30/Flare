@@ -167,7 +167,7 @@ const Filter = (props) => {
         <div className='refiner-bg-closeout-btn' style={{ display: sidebarFilterActive ? "block" : "none" }} onClick={() => setSidebarFilterActive(false)}></div>
         <div className={sidebarFilterActive ? 'sidebar-refiner' : "refiner" }>
             <div className="refiner-container">
-                <p className='refiner-header'><b>Refine</b></p>
+                <p className='refiner-header'><b>Filter</b></p>
                 <div className="filter-type">
                     <div className="Size">
                         <p className='refiner-header'>Size</p>

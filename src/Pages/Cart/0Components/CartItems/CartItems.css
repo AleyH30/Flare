@@ -62,6 +62,8 @@
 /*---------------------------------------------------------------*/
 
 .cartitems-right-container{
+    position: sticky;
+    top: 100px;
     width: 500px;
     padding: 10px;
     height: fit-content;
@@ -134,6 +136,7 @@
         flex-basis: 100%;
     }
     .cartitems-right-container{
+        position: static;
         flex-basis: 100%;
     }
 }

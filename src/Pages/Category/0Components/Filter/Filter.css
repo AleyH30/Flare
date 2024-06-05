@@ -12,6 +12,7 @@
 .refiner-header{
     font-size: 16px;
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 .refiner-container{
     width: 100%;
@@ -25,8 +26,11 @@
     border-bottom: solid;
     font-size: 16px;
 }
+.input-row{
+    margin-bottom: 5px;
+}
 .refiner-apply-btn{
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     display: block;
     width: 140px;
     height: 30px;
@@ -34,9 +38,10 @@
     background-color: rgb(80, 80, 80);
     border: solid 0.5px black;
     color: white;
+    cursor: pointer;
 }
 .refiner-reset-btn{
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     display: block;
     width: 140px;
     height: 30px;
@@ -44,6 +49,7 @@
     background-color: rgb(80, 80, 80);
     border: solid 0.5px black;
     color: white;
+    cursor: pointer;
 }
 .refiner-bg-closeout-btn{
     display: none;
@@ -87,6 +93,9 @@
         display: block;
     }
 }
-@media (max-width: 550px) {
+@media (min-width: 1600px) {
+    .refiner{
+        background-color: white;
+    }
     
 }

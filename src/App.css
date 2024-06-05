@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.show{
-    display: block;
-}
-.hide{
-    display: none;
+.app{
+    max-width: 1600px;
+    margin: auto;
 }
