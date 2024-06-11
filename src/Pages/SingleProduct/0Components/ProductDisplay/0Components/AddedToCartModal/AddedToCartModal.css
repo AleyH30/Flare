@@ -1,0 +1,83 @@
+.atc-modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+.atc-modal-bg-close{
+    background-color: rgba(75, 74, 74, 0.521);
+    width: 100%;
+    height: 100%;
+    
+}
+.atc-modal-cont{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    min-height: 245px;
+    width: 100%;
+    max-width: 480px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 2px rgb(37, 37, 37);
+    padding: 20px 10px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+.atc-modal-cont h1{
+    font-size: 18px;
+    text-align: center;
+}
+.atc-modal-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.atc-image-cont{
+    flex: none;
+    width: 100px;
+    height: 150px;
+}
+.atc-image-cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.atc-right{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.atc-btns{
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.atc-btn{
+    height: 40px;
+    width: 140px;
+    border: 1px black solid;
+    background-color: rgb(88, 88, 88);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.atc-btn:hover{
+    background-color: rgb(114, 114, 114);
+}

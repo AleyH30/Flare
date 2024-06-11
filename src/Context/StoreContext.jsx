@@ -34,13 +34,6 @@ const StoreContextProvider = (props) => {
         else {
             setCartItems(newCI)
         }
-
-        /*let newQuantity = cartItem.quantity + 1;
-                setCartItems(prevState => {
-                    const team = [...prevState];
-                    team[cIdx] = { ...team[cIdx], quantity: newQuantity };
-                    return { team };
-                  });*/ 
     }
     const adjustCartQuantity = (productId, itemId, itemSize, quantity) => {
         const newCI = cartItems.map((cartItem) => {

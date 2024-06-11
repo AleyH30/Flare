@@ -4,6 +4,7 @@ import { StoreContext } from "../../../../Context/StoreContext";
 import ColorButton from "./0Components/ColorButton/ColorButton";
 import AltImage from "./0Components/AltImages";
 import { useLocation } from "react-router-dom";
+import AddedToCartModal from "./0Components/AddedToCartModal/AddedToCartModal";
 
 const ProductDisplay = (props) => {
     const {product} = props;
@@ -15,6 +16,7 @@ const ProductDisplay = (props) => {
     const [size, setSize] = useState(null)
     const [colorBtnSelected, setColorBtnSelected] = useState(item.color);
     const [sizeError, setSizeError] = useState(false)
+    const [atcModal, setATCModal] = useState(false)
 
     const changeMainImage = (image) => {
         setMainImage(image);
@@ -23,6 +25,7 @@ const ProductDisplay = (props) => {
     const ClickAddToCart = () => {
         if (size !== null){
             addToCart(product.id, itemId, size, item.color)
+            setATCModal(true)
         }
         else{
             setSizeError(true)
@@ -40,6 +43,10 @@ const ProductDisplay = (props) => {
         setColorBtnSelected(item.color)
         window.scrollTo(0, 0);
       }, [location]);
+
+      useEffect(() => {
+        document.body.style.overflow = atcModal ? "hidden" : "unset";
+      }, [atcModal]);
 
     return (
         <div className="product-display-container">
@@ -77,6 +84,7 @@ const ProductDisplay = (props) => {
                     </div>
                     <p className="error">{sizeError ? "Please select size" : null}</p>
                     <button className="add-cart-btn" onClick={() => (ClickAddToCart())}>Add To Cart</button>
+                    {atcModal? <AddedToCartModal image={item.img[0]} productName={product.name} price={product.price} color={item.color} size={size} funcClose={() => setATCModal(false)}/> : null}
                     <p className="prod-desc">
                         Oh look, another stylish piece. Step out in style with this fashionable item. A comfortable fit while looking good is all anyone can really ask for.
                         This item does it best. No matter the season, this piece will always be trendy. This item also comes in multiple colors so that you can pick the one
